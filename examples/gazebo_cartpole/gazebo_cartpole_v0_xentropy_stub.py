@@ -238,7 +238,8 @@ if __name__ == '__main__':
         #TODO backward pass
         #TODO adjust gradients
         loss_v.backward()
-        
+
+        optimizer.step()
 
         # Display summary of current batch
         print("%d: loss=%.3f, reward_mean=%.1f, reward_bound=%.1f" % (
